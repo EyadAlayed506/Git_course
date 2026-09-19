@@ -68,9 +68,7 @@ def get_item_id(item_id:str,q:str|None):
     return {"item_id": item_id}
 
 
-@app.post("/items/")
-def create_item(item:Item):
-    return item
+
 
 
 @app.put("/items/{item_id}")
